@@ -97,5 +97,6 @@ with open(fasta,"r") as f:
 print("Genome length is {} basepairs".format(genome_len))
 
 print("Percent of the genome which is protein_coding_gene = %.2f%%"%(100 * protein_coding_length / genome_len))
+
 for type in feature_lengths:
     print("Feature %s lengths percentage of genome is %.2f%%"%(type,100 * feature_lengths[type] / genome_len))
